@@ -17,3 +17,22 @@ write the client request on the terminal.
 ```bash
 curl http://localhost:9200
 ```
+
+Index settings:
+
+```python
+{
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    },
+    "mappings": {
+        "properties": {
+            "text": {"type": "text"},
+            "section": {"type": "text"},
+            "question": {"type": "text"},
+            "course": {"type": "keyword"} 
+        }
+    }
+}
+```
