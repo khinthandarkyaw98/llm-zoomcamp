@@ -36,3 +36,27 @@ Index settings:
     }
 }
 ```
+
+Query:
+
+```python
+{
+    "size": 5,
+    "query": {
+        "bool": {
+            "must": {
+                "multi_match": {
+                    "query": query,
+                    "fields": ["question^3", "text", "section"],
+                    "type": "best_fields"
+                }
+            },
+            "filter": {
+                "term": {
+                    "course": "data-engineering-zoomcamp"
+                }
+            }
+        }
+    }
+}
+```
