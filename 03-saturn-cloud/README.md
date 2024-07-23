@@ -1,6 +1,11 @@
 # LLM Zoomcamp Saturn Cloud
 
-Saturn Cloud starter code for LLM Zoomcamp 
+[Saturn Cloud starter code for LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp-saturncloud)
+
+| Model | Company    | Interface   |
+| :---:   | :---: | :---: |
+| flax-t5-xl | Google   | Text Completion   |
+| Phi-3-min | Microsoft | Chat |
 
 The following parameters control the generation process, with default values provided via generate_params.get(key, default_value):
 **max_length**: The maximum length of the generated sequence. Default is 100 tokens.
