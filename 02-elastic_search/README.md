@@ -11,7 +11,8 @@ docker run -it \
     docker.elastic.co/elasticsearch/elasticsearch:8.4.3
 ```
 
-After having obtained the port for the elasticsearch
+After having obtained the port for the elasticsearch,
+write the client request on the terminal.
 
 ```bash
 curl http://localhost:9200
