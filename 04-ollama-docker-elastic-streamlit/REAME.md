@@ -39,3 +39,5 @@ docker exec -it ollama bash
 
 olla pull phi3
 ```
+
+<img src="streamlit-ui.png">
